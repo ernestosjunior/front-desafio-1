@@ -97,8 +97,6 @@ nav a{
     margin-top: 8px;
     
 
-    
-
 }
 .cards p{
     font-style: normal;
@@ -141,15 +139,88 @@ nav a{
     color: #FFFFFF;
 }
 
+.categories{
+    margin-top: 25px;
+}
+
 .categories-adv{
     background-color: #FFFFFF;
     flex: 1;
     margin-left: 40px;
-    height: 70%;
+    height: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     padding: 24px;
    
+}
+ .categories-adv input {
+    all: unset;
+    border: 1px solid #EEEEEE;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 16px;
+
+}
+
+.categories-adv input:hover{
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+.categories-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-list li{
+    all: unset;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454;
+    border-bottom: 2px dashed #EEEEEE ;
+}
+
+.adv{
+    margin-top: 25px;
+}
+
+.adv h1, .categories h1{
+    border-left: 2px solid #FE0078;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    padding: 11px;
+
+}
+
+.pub-img-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicidade-img{
+    width: 340px;
+    height: 240px;
+    background-color: #EEEEEE;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #545454;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer{
@@ -161,4 +232,43 @@ nav a{
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
+}
+
+.formulario-contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contato input{
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 12px;
+
+}
+
+.formulario-contato input:hover{
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+.btn-enviar{
+    all: unset;
+    align-self: flex-end;
+    border-radius: 20px;
+    background: #FE0078;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 12px 24px;
+
+
+
+
+}
+
+.btn-enviar:hover{
+    cursor: pointer;
 }
