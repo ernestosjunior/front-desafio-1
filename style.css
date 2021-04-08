@@ -56,7 +56,7 @@ nav a{
 .content {
     flex: 2;
 }
-
+/************************************************************** CSS DOS ARTIGOS ***************************************/
 .cards{
     background-color: #FFFFFF;
     display: flex;
@@ -98,9 +98,7 @@ nav a{
     
 
 }
-.cards p{
-    font-style: normal;
-    font-weight: normal;
+.cards p, i, li{
     font-size: 14px;
     line-height: 19px;
     color: #545454;
@@ -138,19 +136,21 @@ nav a{
     background-color: #FE0078;
     color: #FFFFFF;
 }
-
+/*******************************************CSS SIDE-BAR ******************************/
 .categories{
     margin-top: 25px;
 }
 
 .categories-adv{
     background-color: #FFFFFF;
-    flex: 1;
+    flex: 0;
     margin-left: 40px;
     height: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    padding: 24px;
+    padding: 20px;
+    max-width: 380px;
+    margin-bottom: 32px;
    
 }
  .categories-adv input {
@@ -173,8 +173,12 @@ nav a{
 }
 
 .categories-list {
-    display: flex;
-    flex-direction: column;
+    padding-left: 0;
+    display: grid;
+    width: 100%;
+
+
+    
 }
 
 .categories-list li{
@@ -185,6 +189,15 @@ nav a{
     line-height: 19px;
     color: #545454;
     border-bottom: 2px dashed #EEEEEE ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-list li:hover{
+    border-bottom: 2px dashed #FE0078;
+    color: #FE0078;
+    cursor: pointer;
+    
 }
 
 .adv{
@@ -205,7 +218,6 @@ nav a{
 .pub-img-group{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -221,19 +233,11 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    margin-bottom: 32px;
 }
 
-.footer{
-
-    background-color: #222222;
-    text-align: center;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-}
-
+/************************** CSS FORMULARIO CONTATO**********************************************/
 .formulario-contato{
     display: flex;
     flex-direction: column;
@@ -244,10 +248,38 @@ nav a{
     box-sizing: border-box;
     border-radius: 2px;
     padding: 12px;
+    margin-bottom: 24px;
+    margin-top: 8px;
 
 }
 
 .formulario-contato input:hover{
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+.formulario-contato textarea{
+    margin-top: 8px;
+}
+
+.form-contato-input{
+    display: flex;
+}
+
+.form-contato-input label:last-child{
+    margin: 0;
+}
+
+.form-contato-input label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 24px;
+
+}
+
+
+.formulario-contato textarea:hover{
     cursor: pointer;
     border-color: #FE0078;
 }
@@ -264,11 +296,96 @@ nav a{
     color: #FFFFFF;
     padding: 12px 24px;
 
-
-
-
 }
 
 .btn-enviar:hover{
     cursor: pointer;
+}
+/********************************************** CSS FORMULARIO COMENTARIO ARTIGO ***************************************/
+.form-comentario{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-comentario label {
+    margin-bottom: 8px;
+
+}
+.form-comentario input{
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 8px;
+    margin-bottom: 24px;
+   
+    
+}
+
+.form-comentario button{
+    margin-bottom: 68px;
+}
+
+.icons-contato{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-coment-input{
+    display: flex;  
+    
+}
+
+.form-coment-input label:last-child{
+    margin: 0;
+}
+
+.form-coment-input label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 24px;
+
+}
+.form-coment-input input {
+    margin-top: 8px;
+}
+
+.form-coment-input input:hover {
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+.form-comentario textarea:hover {
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+textarea {
+    all: unset;
+    border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+    margin-bottom: 48px;
+    
+}
+
+
+.desc-icons{
+    display: inline;
+}
+
+.contatos-info p {
+    margin-bottom: 24px;
+}
+
+/********************************** CSS DO RODAPÉ ***************************************************/
+.footer{
+
+    background-color: #222222;
+    text-align: center;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
 }
