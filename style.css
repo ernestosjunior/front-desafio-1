@@ -167,7 +167,7 @@ nav a{
 
 }
 
-.categories-adv input:hover{
+.categories-adv input:hover, .categories-adv input:focus{
     cursor: pointer;
     border-color: #FE0078;
 }
