@@ -23,12 +23,13 @@ header {
 }
 
 header svg {
-    width: 50%;
+    width: 30%;
+    
 }
 
 nav {
     display: flex;
-    width: 50%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     
@@ -48,7 +49,7 @@ nav a{
     display: flex;
     flex-direction: row;
     margin: auto;
-    width: 90%;
+    
     justify-content: space-evenly;
     
 }
@@ -65,6 +66,7 @@ nav a{
     padding: 24px 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    max-width: 730px;
 }
 
 .cards-img {
@@ -244,6 +246,7 @@ nav a{
 }
 
 .formulario-contato input{
+    all: unset;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     border-radius: 2px;
@@ -257,6 +260,12 @@ nav a{
     cursor: pointer;
     border-color: #FE0078;
 }
+
+.formulario-contato input:focus{
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
 
 .formulario-contato textarea{
     margin-top: 8px;
@@ -280,6 +289,11 @@ nav a{
 
 
 .formulario-contato textarea:hover{
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+.formulario-contato textarea:focus{
     cursor: pointer;
     border-color: #FE0078;
 }
@@ -313,13 +327,14 @@ nav a{
 
 }
 .form-comentario input{
+    all: unset;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     border-radius: 2px;
     padding: 8px;
     margin-bottom: 24px;
+    background-color: #FFFFFF;
    
-    
 }
 
 .form-comentario button{
@@ -356,7 +371,19 @@ nav a{
     border-color: #FE0078;
 }
 
+.form-coment-input input:focus {
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+
 .form-comentario textarea:hover {
+    cursor: pointer;
+    border-color: #FE0078;
+}
+
+
+.form-comentario textarea:focus{
     cursor: pointer;
     border-color: #FE0078;
 }
